@@ -55,7 +55,7 @@ function sliderLeft(){
     current--;
   }
 
-// Show next
+// Show next 
 function slideRight(){
   reset();
   sliderImages[current + 1].style.display = 'block';
@@ -70,7 +70,7 @@ arrowLeft.addEventListener('click', function(){
   sliderLeft();
 });
 
-// right arrow click
+// right arrow click.. this where I am having my problem.
 arrowRight.addEventListener('click', function(){
   if(current === sliderImages.length - 1){
     current = -1;
